@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Hello from Loops</h1>
+
+    <div id="result">
+
+    </div>
+
+
+    <script>
+
+        // types of loops
+
+
+        // 1) Entry controlled loop
+
+            // 1) for loop
+
+
+            // syntax of for loop
+
+                // for(initialization ; condition; inc / dec){
+
+                    // statements
+
+                // }
+
+
+                // example
+
+
+                // var i;
+
+                // for( i = 0; i <= 10; i++){
+
+                //     console.log(i);
+
+                // }
+
+
+
+
+            // 2) while loop
+
+
+            // while(condition){
+
+            //     // statement
+            //     // inc/dec
+
+            // }
+
+
+            // var i = 0;
+
+            // while(i <= 10){
+
+            //     console.log(i);
+            //     i++;
+
+            // }
+
+
+
+            // var calculator = true;
+
+            // while(calculator == true){
+
+            //     var input = parseInt(window.prompt('Select any one option from following : \n 1)Add \n 2)Sub \n 3)Mul \n 4)Div \n 5)Exit'))
+
+            //     switch(input){
+
+            //         case 1 : var num1 = parseInt(window.prompt('Enter the first value : '))
+            //                  var num2 = parseInt(window.prompt('Enter the Second value : '))
+                             
+
+            //                  alert(` addition of two numbers is : ${num1 + num2} `);
+            //                  break;
+
+            //         case 2 :  var num1 = parseInt(window.prompt('Enter the first value : '))
+            //                  var num2 = parseInt(window.prompt('Enter the Second value : '))
+
+            //                  alert(` Subtraction of two numbers is : ${num1 - num2} `);
+            //                  break;
+
+            //         case 3 : var num1 = parseInt(window.prompt('Enter the first value : '))
+            //                  var num2 = parseInt(window.prompt('Enter the Second value : '))
+
+            //                  alert(` Multiplication of two numbers is : ${num1 * num2} `);
+            //                  break;
+
+            //         case 4 :  var num1 = parseInt(window.prompt('Enter the first value : '))
+            //                  var num2 = parseInt(window.prompt('Enter the Second value : '))
+
+            //                  alert(` Division of two numbers is : ${num1 / num2} `);
+            //                  break;
+
+            //         case 5 : alert('Thank you for using this calculator , visit again!');
+            //                  calculator = false;
+            //                  break;
+
+            //         default : alert('Invalid option, please choose the correct option')
+
+
+            //     }
+
+
+            // }
+
+
+
+        // 2) Exit controlled loop
+            
+            // 3) do while loop
+
+            
+            // var plan = "Unpurchased";
+
+
+            // do{
+
+            //     console.log('using the application')
+
+            // }while(plan == "purchased")
+
+
+
+            // *
+            // **
+            // ***
+            // ****
+
+            var str = ""
+
+            var i , j;
+
+            for(i = 4; i <= 1; i++){
+
+                for(j = 1; j <= i; j++){
+
+                    str +="*";
+
+
+                }
+
+                str+="\n"
+
+            }
+
+
+            console.log(str)
+
+    </script>
+
+</body>
+</html>

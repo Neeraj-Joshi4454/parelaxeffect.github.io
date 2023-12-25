@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .main {
+
+            background-color: black;
+            color: rgb(5, 255, 5);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .time {
+
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+        }
+
+        .date {
+
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <h1>Dates in JS</h1> -->
+
+    <div class="main">
+
+        <div class="clock">
+
+            <div class="time">
+                <div class="hours"></div>&nbsp;:&nbsp;
+                <div class="minutes"></div>&nbsp;:&nbsp;
+                <div class="secs"></div> &nbsp;
+                <div class="ampm"></div>
+            </div>
+
+            <div class="date">
+                <div class="day"></div> &nbsp;&nbsp;
+                <div class="currentDate"></div>/
+                <div class="month"></div>/
+                <div class="year"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+
+
+
+        setInterval(() => {
+
+
+
+            var months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+
+            var days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+
+            var d = new Date();
+
+
+            document.querySelector('.hours').innerHTML = d.getHours()
+            document.querySelector('.minutes').innerHTML = d.getMinutes()
+            document.querySelector('.secs').innerHTML = d.getSeconds()
+            document.querySelector('.day').innerHTML = days[d.getDay()]
+            document.querySelector('.currentDate').innerHTML = d.getDate()
+            document.querySelector('.month').innerHTML = months[d.getMonth()]
+            document.querySelector('.year').innerHTML = d.getFullYear()
+
+            if(d.getHours() >= 12){
+                
+                document.querySelector('.ampm').innerHTML = "PM"
+                
+            }else{
+                
+                document.querySelector('.ampm').innerHTML = "AM"
+            }
+
+        }, 1000);
+
+
+    </script>
+</body>
+
+</html>

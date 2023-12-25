@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="result">
+
+    </div>
+    
+
+
+    <script>
+
+        // var i = 10; // global variable
+
+        // function showNumber(){
+
+        //     var j = 20; // local variable
+
+        //     console.log(i);
+
+        // }
+
+        // // console.log(j)
+
+
+        // showNumber();
+
+
+        // var lang = ["HTML", "CSS", "JS"];
+
+
+
+
+        // var student = {
+
+        //     id : 1,
+        //     name : "student1",
+        //     city : "pune",
+        //     course : "Full Stack React",
+
+        //     showInfo : function(){
+
+        //         console.log("id : " + this.id + "name of student is : " + this.name + " city : " + this.city + " course : "+ this.course)
+
+        //     }
+
+        // }
+
+
+
+        // student.showInfo()
+      
+
+
+
+
+        // var char = {
+
+        //     name : "groot",
+        //     height : "5.6",
+        //     specialMode : function(){
+
+        //         console.log("special mode is on for " + this.name)
+
+        //     }
+
+        // }
+
+
+        class Char{
+
+            constructor(name, height, phrase){
+
+                this._Name = name;
+                this._height = height,
+                this._phrase = phrase
+
+
+            }
+
+
+            specialMode(){
+
+                console.log(this._phrase + "for" + " " +this._Name)
+
+            }
+
+            speak(){
+
+                console.log(this._Name + " is Speaking.....")
+
+            }
+
+
+        }
+
+
+
+        var ch1 = new Char("groot", "5.6", "Fight mode is on ")
+        var ch2 = new Char("mario", "3.6", "speed mode is on ")
+
+
+        ch1.specialMode()
+        ch1.speak()
+
+        ch2.specialMode()
+        ch2.speak()
+
+
+
+
+    
+
+
+
+    </script>
+</body>
+</html>
